@@ -1,6 +1,13 @@
+
+
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color:  black ;
+    z-index: 3;
     padding-bottom: 7px;
+}
+
+header h1 {
+    color: white;
 }
 
 header a {
@@ -11,6 +18,9 @@ header a {
     transition-duration: .5s;
 }
 
-header a:houver {
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.192);
+header a:hover {
+    background-color: blue;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.192);;
+    
 }
+

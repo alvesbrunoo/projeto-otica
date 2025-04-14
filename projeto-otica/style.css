@@ -18,6 +18,8 @@ header {
     padding-bottom: 7px;
 }
 
+
+
 header h1 {
     color: white;
 }
@@ -37,7 +39,7 @@ header a:hover {
 }
 
 
-.image-hover {
+/* .image-hover {
     width: 200px;
     height: 200px;
     position: relative;
@@ -64,6 +66,53 @@ header a:hover {
 
 .image-hover:hover img.normal {
     opacity: 0;
+} */
+
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    transition: opacity 0.4s ease;
+}
+
+.product-image.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product-card:hover .product-image.hover {
+    opacity: 1;
+}
+
+.product-card:hover .product-image.default {
+    opacity: 0;
+}
+
+.product-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-name {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product-parcel {
+    font-size: 14px;
+    color: #777;
 }
 
 footer {

@@ -146,6 +146,11 @@ footer {
     padding: 0, 20px;
 }
 
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
 
 .menus {
     display: flex;
@@ -205,5 +210,4 @@ footer {
 .carousel-control.next {
     right: 0;
 }
-
 

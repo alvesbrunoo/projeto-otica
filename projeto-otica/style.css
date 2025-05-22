@@ -42,6 +42,10 @@ header a:hover {
 }
 
 
+.titulo img {
+    width: 74px;
+}
+
 /* .image-hover {
     width: 200px;
     height: 200px;
@@ -71,6 +75,11 @@ header a:hover {
     opacity: 0;
 } */
 
+.installment {
+    font-size: 14px;
+    color: gray;
+}
+
 
 .product-card {
     position: relative;
@@ -80,6 +89,9 @@ header a:hover {
 .product-image {
     width: 100%;
     transition: opacity 0.4s ease;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10p
 }
 
 .product-image.hover {

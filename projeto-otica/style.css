@@ -130,6 +130,11 @@ header a:hover {
     color: #777;
 }
 
+.produtos a {
+    text-decoration: none;
+    color: black;
+
+}
 
 
 footer {

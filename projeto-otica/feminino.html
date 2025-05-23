@@ -93,26 +93,17 @@
         </div>
     </div>
 
-    <!-- <div class="container py-5">
-        <div class="row g-4 justify-content-center">
-
-                <class="col-md-4">
-                    <div class="product-card">
-                    img= colocar imagem
-        </div>
-    </div>  -->
 
     <hr>
 
     <div class="container py-5">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div id="product-container" class="row row-cols-1 row-cols-1 md-g-4">
 
             <!-- Produto 1 -->
             <div class="col">
                 <div class="product-card border">
-                    <img src="imagens/Verificações/IMG-20250520-WA0018.jpg" class="product-image default" class="product-image" alt="Óculos The Beatles">
-                    <img src="imagens/Verificações/IMG-20250520-WA0023.jpg" class="product-image hover" alt="">
-                    <p class="mb-1"><strong>ÓCULOS DE SOL UNISSEX THE BEATLES</strong><br>RETANGULAR POLARIZADO DEGRADÊ PRETO</p>
+                    <img src="masculino/oculos masculino/Imagem do WhatsApp de 2025-05-23 à(s) 11.06.24_f3520b23.jpg" class="product-image img-fluid" class="product-image" alt="">
+                    <p class="mb-1"><strong>ÓCULOS DE SOL MASCULINO</strong><br>RETANGULAR POLARIZADO DEGRADÊ PRETO</p>
                     <p class="price">R$ 399,98</p>
                     <p class="installment">ou 4x R$ 99,99</p>
                 </div>
@@ -121,9 +112,8 @@
             <!-- Produto 2 -->
             <div class="col">
                 <div class="product-card border">
-                    <img src="imagens/Verificações/IMG-20250520-WA0023.jpg" class="product-image default" alt="Óculos Bambu Preto">
-                    <img src="imagens/Verificações/IMG-20250520-WA0020.jpg" class="product-image hover" alt="">
-                    <p class="mb-1"><strong>ÓCULOS DE SOL MASCULINO BAMBU E</strong><br>MADEIRA QUADRADO POLARIZADO PRETO</p>
+                    <img src="masculino/oculos masculino/Imagem do WhatsApp de 2025-05-23 à(s) 11.10.17_b7c66d93.jpg" class="product-image img-fluid" alt="">
+                    <p class="mb-1"><strong>ÓCULOS DE SOL MASCULINO DOURADO</strong><br>MADEIRA QUADRADO POLARIZADO PRETO</p>
                     <p class="price">R$ 399,98</p>
                     <p class="installment">ou 4x R$ 99,99</p>
                 </div>
@@ -132,9 +122,8 @@
             <!-- Produto 3 -->
             <div class="col">
                     <div class="product-card border">
-                        <img src="imagens/Verificações/IMG-20250520-WA0007.jpg" class="product-image default" alt="Óculos Bambu Verde">
-                        <img src="imagens/Verificações/IMG-20250520-WA0017.jpg" class="product-image hover" alt="">
-                        <p class="mb-1"><strong>ÓCULOS DE SOL MASCULINO BAMBU E</strong><br>MADEIRA QUADRADO POLARIZADO VERDE</p>
+                        <img src="masculino/oculos masculino/Imagem do WhatsApp de 2025-05-23 à(s) 11.06.26_20650268.jpg" class="product-image img-fluid" alt="">
+                        <p class="mb-1"><strong>ÓCULOS DE SOL MASCULINO</strong><br>MADEIRA QUADRADO POLARIZADO VERDE</p>
                         <p class="price">R$ 399,98</p>
                         <p class="installment">ou 4x R$ 99,99</p>
                     </div>
@@ -143,9 +132,8 @@
             <!-- Produto 4 -->
             <div class="col">
                 <div class="product-card border">
-                    <img src="imagens/Verificações/IMG-20250520-WA0009.jpg" class="product-image default" alt="Óculos Degradê">
-                    <img src="imagens/Verificações/IMG-20250520-WA0016.jpg" class="product-image hover" alt="">
-                    <p class="mb-1"><strong>ÓCULOS DE SOL MASCULINO BAMBU E</strong><br>MADEIRA QUADRADO POLARIZADO DEGRADÊ</p>
+                    <img src="masculino/oculos masculino/Imagem do WhatsApp de 2025-05-23 à(s) 11.06.25_6f6f102b.jpg" class="product-image img-fluid" alt="">
+                    <p class="mb-1"><strong>ÓCULOS DE SOL MASCULINO</strong><br>MADEIRA QUADRADO POLARIZADO DEGRADÊ</p>
                     <p class="price">R$ 399,98</p>
                     <p class="installment">ou 4x R$ 99,99</p>
                 </div>
@@ -153,11 +141,10 @@
 
         </div>
 
-        <!-- Paginação -->
         <div class="text-center mt-4">
-            <button class="btn btn-outline-dark me-2">&lt;</button>
-            <span>01</span> / <span>04</span>
-            <button class="btn btn-outline-dark ms-2">&gt;</button>
+            <button id="prevBtn" class="btn btn-outline-dark me-2" onclick="changePage(-1)">&lt;</button>
+            <span id="pageIndicator">01</span> / <span id="totalPages">04</span>
+            <button id="nextBtn" class="btn btn-outline-dark ms-2" onclick="changePage(1)">&gt;</button>
         </div>
     </div>
 

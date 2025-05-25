@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuário</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+        const now = new Date();
+        const formatted = now.toISOString().slice(0, 16); // "yyyy-MM-ddTHH:mm"
+        document.getElementById("criado-em").value = formatted;
+        });
+    </script>
+    </head>
+    <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-center">Cadastro de Usuário</h2>
+        <form class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium mb-1" for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Seu nome" class="w-full border rounded px-3 py-2" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium mb-1" for="email">Email</label>
+            <input id="email" type="email" placeholder="seu@email.com" class="w-full border rounded px-3 py-2" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium mb-1" for="cpf">CPF</label>
+            <input id="cpf" type="text" placeholder="000.000.000-00" class="w-full border rounded px-3 py-2" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium mb-1" for="senha">Senha</label>
+            <input id="senha" type="password" placeholder="********" class="w-full border rounded px-3 py-2" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium mb-1" for="data-nascimento">Data de Nascimento</label>
+            <input id="data-nascimento" type="date" class="w-full border rounded px-3 py-2" required />
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium mb-1" for="criado-em">Criado em</label>
+            <input id="criado-em" type="datetime-local" class="w-full border rounded px-3 py-2 bg-gray-100" readonly />
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+            Cadastrar
+        </button>
+        </form>
+    </div>
+</body>
+</html>

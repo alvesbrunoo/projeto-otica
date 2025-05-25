@@ -46,34 +46,6 @@ header a:hover {
     width: 74px;
 }
 
-/* .image-hover {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-}
-
-.image-hover img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: opacity 0.3s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.image-hover img.hover {
-    opacity: 0;
-}
-
-.image-hover:hover img.hover {
-    opacity: 1;
-}
-
-.image-hover:hover img.normal {
-    opacity: 0;
-} */
 
 .installment {
     font-size: 14px;

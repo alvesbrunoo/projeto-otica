@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <!-- Card do Produto -->
+    <div class="bg-white rounded-xl shadow-lg p-6 max-w-sm text-center">
+        <h2 class="text-xl font-bold mb-4">Produto X</h2>
+        <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9AEiBVrcZeA7x-Q0tk5DJu-r2YZ2qolPBkg&s"
+        alt="Produto X"
+        class="cursor-pointer rounded-lg hover:scale-105 transition"
+        onclick="openModal()"
+        />
+        <p class="text-gray-700 mt-4">Clique na imagem para mais detalhes</p>
+    </div>
+
+    <!-- Modal de Detalhes -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full relative">
+        <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-2xl">&times;</button>
+        <h3 class="text-2xl font-bold mb-2">Produto X</h3>
+        <p class="text-sm text-gray-500 mb-2">Código: 123456</p>
+        <img src="https://via.placeholder.com/300x200" alt="Produto X" class="rounded mb-4" />
+        <p class="mb-4">Descrição: Este é um produto de exemplo com todas as funcionalidades modernas que você procura.</p>
+        <p class="text-lg font-semibold mb-4">Preço: R$ 99,90</p>
+        <a href="pagamento.html">
+            <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Ir para pagamento</button>
+        </a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function openModal() {
+        document.getElementById("modal").classList.remove("hidden");
+        }
+
+        function closeModal() {
+        document.getElementById("modal").classList.add("hidden");
+        }
+    </script>
+</body>
+</html>

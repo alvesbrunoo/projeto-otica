@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pagamento</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="pagamento.js"></script>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
   <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
     <h2 class="text-2xl font-bold mb-6 text-center">Pagamento</h2>
 
-    <!-- Valor fixo exibido -->
+    <!-- Valor fixo -->
     <div class="mb-6 text-center">
       <p class="text-gray-600">Valor total:</p>
       <p id="valor-pagamento" class="text-2xl font-bold text-green-700"></p>
@@ -20,8 +21,8 @@
     <div class="mb-6">
       <label class="block text-sm font-medium mb-2">Método de Pagamento</label>
       <div class="flex gap-3">
-        <button type="button" id="btn-cartao" class="flex-1 border rounded-lg py-2 bg-green-600 text-white hover:bg-green-700">Cartão</button>
-        <button type="button" id="btn-pix" class="flex-1 border rounded-lg py-2 hover:bg-green-100">Pix</button>
+        <button type="button" id="btn-cartao" class="flex-1 border rounded-lg py-2 bg-green-600 text-white hover:bg-green-700 transition">Cartão</button>
+        <button type="button" id="btn-pix" class="flex-1 border rounded-lg py-2 hover:bg-green-100 transition">Pix</button>
       </div>
     </div>
 

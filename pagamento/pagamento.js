@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const cidade = "SAO PAULO";
         const txid = "TX" + Math.floor(Math.random() * 1000000);
 
-        // Payload Pix simples (funciona para apps bancários)
+        // Payload Pix simples
         const payload = `00020126360014BR.GOV.BCB.PIX0114${chavePix}520400005303986540${valorPagamento.toFixed(2)}5802BR5913${nome}6009${cidade}62070503${txid}6304`;
 
         // Gera QR Code via API

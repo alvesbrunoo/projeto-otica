@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro de Usuário</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        window.addEventListener("DOMContentLoaded", () => {
-        const now = new Date();
-        const formatted = now.toISOString().slice(0, 16); // "yyyy-MM-ddTHH:mm"
-        document.getElementById("criado-em").value = formatted;
-        });
-    </script>
-    </head>
-    <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
-        <h2 class="text-2xl font-bold mb-6 text-center">Cadastro de Usuário</h2>
-        <form class="space-y-4">
-        <div>
-            <label class="block text-sm font-medium mb-1" for="nome">Nome</label>
-            <input id="nome" type="text" placeholder="Seu nome" class="w-full border rounded px-3 py-2" required />
-        </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login e Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Tela de Login -->
+    <form id="formLogin" class="active">
+      <h1>Login</h1>
+      <div class="input-group">
+        <label for="loginEmail">E-mail</label>
+        <input type="email" id="loginEmail" placeholder="Digite seu e-mail" required>
+      </div>
+      <div class="input-group">
+        <label for="loginSenha">Senha</label>
+        <input type="password" id="loginSenha" placeholder="Digite sua senha" required>
+      </div>
+      <button type="submit">Entrar</button>
+      <p id="loginMsg"></p>
+      <p class="trocarTela">Não tem conta? <a href="#" id="linkCadastro">Cadastre-se</a></p>
+    </form>
 
-        <div>
-            <label class="block text-sm font-medium mb-1" for="email">Email</label>
-            <input id="email" type="email" placeholder="seu@email.com" class="w-full border rounded px-3 py-2" required />
-        </div>
+    <!-- Tela de Cadastro -->
+    <form id="formCadastro">
+      <h1>Cadastro</h1>
+      <div class="input-group">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+      </div>
+      <div class="input-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="exemplo@email.com" required>
+      </div>
+      <div class="input-group">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Crie uma senha" required>
+      </div>
+      <div class="input-group">
+        <label for="confirmarSenha">Confirmar senha</label>
+        <input type="password" id="confirmarSenha" placeholder="Repita sua senha" required>
+      </div>
+      <button type="submit">Cadastrar</button>
+      <p id="cadastroMsg"></p>
+      <p class="trocarTela">Já tem conta? <a href="#" id="linkLogin">Entrar</a></p>
+    </form>
+  </div>
 
-        <div>
-            <label class="block text-sm font-medium mb-1" for="cpf">CPF</label>
-            <input id="cpf" type="text" placeholder="000.000.000-00" class="w-full border rounded px-3 py-2" required />
-        </div>
-
-        <div>
-            <label class="block text-sm font-medium mb-1" for="senha">Senha</label>
-            <input id="senha" type="password" placeholder="********" class="w-full border rounded px-3 py-2" required />
-        </div>
-
-        <div>
-            <label class="block text-sm font-medium mb-1" for="data-nascimento">Data de Nascimento</label>
-            <input id="data-nascimento" type="date" class="w-full border rounded px-3 py-2" required />
-        </div>
-
-        <div>
-            <label class="block text-sm font-medium mb-1" for="criado-em">Criado em</label>
-            <input id="criado-em" type="datetime-local" class="w-full border rounded px-3 py-2 bg-gray-100" readonly />
-        </div>
-
-        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-            Cadastrar
-        </button>
-        </form>
-    </div>
+  <script src="script.js"></script>
 </body>
 </html>

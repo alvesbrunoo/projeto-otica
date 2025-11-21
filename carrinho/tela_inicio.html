@@ -9,60 +9,62 @@
 
 </head>
 <body>
-<div class="modal">
-<h2>Meu Carrinho</h2>
+    <div class="modal">
+        <h2>Meu Carrinho</h2>
 
 
-<div class="cart-item">
-<img src="/mnt/data/fd63ac17-a21d-4857-a19d-5a414e8a64bb.png" alt="Produto" />
+        <div class="cart-item">
+            <img src="/mnt/data/fd63ac17-a21d-4857-a19d-5a414e8a64bb.png" alt="Produto" />
 
 
-<div class="item-info">
-<strong>Combo Venum UFC Classic Shirts 2025 - 2 Camisetas UFC com 20% OFF</strong>
-<p>R$ 207,55</p>
-</div>
+            <div class="item-info">
+                <strong>Óculos de sol 20% OFF</strong>
+                <p>R$ 207,55</p>
+            </div>
 
 
-<div class="qty-control">
-<button onclick="updateQty('minus')">-</button>
-<span id="qty">1</span>
-<button onclick="updateQty('plus')">+</button>
-</div>
+            <div class="qty-control">
+                <button onclick="updateQty('minus')">-</button>
+                <span id="qty">1</span>
+                <button onclick="updateQty('plus')">+</button>
+            </div>
 
 
-<strong id="item-total">R$ 207,55</strong>
-</div>
+            <strong id="item-total">R$ 207,55</strong>
+        </div>
 
 
-<div class="actions">
-<button onclick="alert('Continuar comprando')">CONTINUAR COMPRANDO</button>
-<button onclick="clearCart()">LIMPAR CARRINHO</button>
-<button onclick="updateTotal()">ATUALIZAR</button>
-</div>
+        <div class="actions">
+            <button onclick="alert('Continuar comprando')">CONTINUAR COMPRANDO</button>
+            <button onclick="clearCart()">LIMPAR CARRINHO</button>
+            <button onclick="updateTotal()">ATUALIZAR</button>
+        </div>
 
 
-<p>Prazo passa a ser contado após a coleta do pedido.<br>
-5% de desconto pagando com boleto<br>
-Ganhe 5% de desconto pagando com pix
-</p>
+        <p>Prazo passa a ser contado após a coleta do pedido.<br>
+        5% de desconto pagando com boleto<br>
+        Ganhe 5% de desconto pagando com pix
+        </p>
 
 
-<div class="coupon-area">
-<h3>Aplicar Cupom de Desconto</h3>
-<input type="text" id="cupom" placeholder="Digite o cupom" />
-<button onclick="applyCoupon()">Aplicar</button>
-</div>
+        <div class="coupon-area">
+            <h3>Aplicar Cupom de Desconto</h3>
+            <input type="text" id="cupom" placeholder="Digite o cupom" />
+            <button onclick="applyCoupon()">Aplicar</button>
+        </div>
 
 
-<div class="totals">
-<div>Subtotal: <strong id="subtotal">R$ 207,55</strong></div>
-<div>Total do Pedido: <strong id="total">R$ 207,55</strong></div>
-</div>
+        <div class="totals">
+            <div>Subtotal: <strong id="subtotal">R$ 207,55</strong></div>
+            <div>Total do Pedido: <strong id="total">R$ 207,55</strong></div>
+        </div>
 
 
-<button class="checkout-btn">FECHAR SEU PEDIDO</button>
-</div>
+        <button class="checkout-btn">FECHAR SEU PEDIDO</button>
+    </div>
 
-
-<div class="item-info">
+    <div style="text-align:center; margin-top:20px;">
+        <a href="login.html" target="_blank"><button style="padding:12px 25px; background:black; color:white; border:none; margin-right:10px; cursor:pointer;">LOGIN</button></a>
+        <a href="cadastro.html" target="_blank"><button style="padding:12px 25px; background:#d9d9d9; color:black; border:none; cursor:pointer;">CADASTRAR</button></a>
+    </div>
 </html>

@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.modal {
+    width: 60%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.cart-item img {
+    width: 90px;
+    border-radius: 5px;
+}
+
+
+.item-info {
+    flex: 1;
+    margin-left: 15px;
+}
+
+
+.qty-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover { opacity: 0.8; }
+
+
+.coupon-area, .totals, .actions {
+    margin-top: 25px;
+}
+
+
+input {
+    padding: 10px;
+    width: 200px;
+}
+
+
+.totals div {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+}
